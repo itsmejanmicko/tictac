@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .highlight {
+            background-color: green;
+        }
+        .highlight-red {
+        background-color: #ff0000; 
+    }
+    </style>
+</head>
+<body class="h-screen flex flex-col items-center justify-center bg-gray-100">
+    <h1 class="text-3xl font-bold mb-4">Tic Tac Toe</h1>
+    <h2 id="player_turn" class="text-xl mb-4">Player X's turn</h2>
+    <div id="error" class="text-red-500 mb-2"></div>
+
+    <main id="main_board" class="grid grid-cols-3 gap-2">
+        <div class="cell flex items-center justify-center border border-gray-300 h-24 w-24 text-3xl"></div>
+        <div class="cell flex items-center justify-center border border-gray-300 h-24 w-24 text-3xl"></div>
+        <div class="cell flex items-center justify-center border border-gray-300 h-24 w-24 text-3xl"></div>
+        <div class="cell flex items-center justify-center border border-gray-300 h-24 w-24 text-3xl"></div>
+        <div class="cell flex items-center justify-center border border-gray-300 h-24 w-24 text-3xl"></div>
+        <div class="cell flex items-center justify-center border border-gray-300 h-24 w-24 text-3xl"></div>
+        <div class="cell flex items-center justify-center border border-gray-300 h-24 w-24 text-3xl"></div>
+        <div class="cell flex items-center justify-center border border-gray-300 h-24 w-24 text-3xl"></div>
+        <div class="cell flex items-center justify-center border border-gray-300 h-24 w-24 text-3xl"></div>
+    </main>
+
+    <button id="reset" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded">Reset Game</button>
+
+    <script src="index.js"></script>
+</body>
+</html>
